@@ -5,7 +5,7 @@ class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      fight: "The Ultima Weapon",
+      fight: "Bahamut Prime",
       report: "",
       errorMessage: "",
       info: {},
@@ -51,11 +51,13 @@ class App extends React.Component{
       return
     }
 
-    if (this.state.fight == "all") {
+    console.log(info)
+
+    if (this.state.fight === "all") {
       return info.fights
     }
 
-    const fights = info.fights.filter(fight => fight.name == this.state.fight)
+    const fights = info.fights.filter(fight => fight.name === this.state.fight)
     const pullLengths = this.getPullLengths(fights)
 
 
@@ -133,8 +135,9 @@ class App extends React.Component{
               <label>
                 Fight:
                 <select value={this.state.fight} onChange={this.handleFightChange}>
-                  {/* <option value="all">All</option> */}
+                  <option value="all">All</option>
                   <option value="The Ultima Weapon">Ultima Weapon (Ultimate)</option>
+                  <option value="Bahamut Prime">Unending Coil of Bahamut (Ultimate)</option>
                 </select>
               </label>
             </p>
