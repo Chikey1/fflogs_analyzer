@@ -2,20 +2,24 @@
   "name": "fflogs-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chikey1.github.io/fflogs_analyzer",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^3.4.3",
+    "webpack-cli": "^5.1.4",
+    "yarn": "^1.22.22"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "aws s3 sync ~/fflogs_analyzer/fflogs-app/build s3://fflogs.saraqi.ca --acl public-read",
+    "deploy-aws": "aws s3 sync ~/fflogs_analyzer/fflogs-app/build s3://fflogs.saraqi.ca --acl public-read",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }

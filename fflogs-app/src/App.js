@@ -5,7 +5,7 @@ class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      fight: "Dragonsong's Reprise",
+      fight: "Futures Rewritten",
       report: "",
       errorMessage: "",
       info: {},
@@ -140,6 +140,7 @@ class App extends React.Component{
                   <option value="Bahamut Prime">Unending Coil of Bahamut (Ultimate)</option>
                   <option value="The Epic of Alexander">The Epic of Alexander (Ultimate)</option>
                   <option value="Dragonsong's Reprise">Dragonsong's Reprise (Ultimate)</option>
+                  <option value="Futures Rewritten">Future's Rewritten (Ultimate)</option>
                 </select>
               </label>
             </p>
