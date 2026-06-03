@@ -2,7 +2,7 @@
   "name": "fflogs-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chikey1.github.io/fflogs_analyzer/",
+  "homepage": "https://fflogs.saraqi.ca",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy-aws": "aws s3 sync ~/fflogs_analyzer/fflogs-app/build s3://fflogs.saraqi.ca --acl public-read",
+    "deploy-aws": "aws s3 sync build s3://fflogs.saraqi.ca --delete",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"

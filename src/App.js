@@ -141,6 +141,7 @@ class App extends React.Component{
                   <option value="The Epic of Alexander">The Epic of Alexander (Ultimate)</option>
                   <option value="Dragonsong's Reprise">Dragonsong's Reprise (Ultimate)</option>
                   <option value="Futures Rewritten">Future's Rewritten (Ultimate)</option>
+                  <option value="Dancing Mad">Dancing Mad (Ultimate)</option>
                 </select>
               </label>
             </p>
