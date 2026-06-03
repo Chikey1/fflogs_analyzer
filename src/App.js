@@ -5,7 +5,7 @@ class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      fight: "Futures Rewritten",
+      fight: "Dancing Mad",
       report: "",
       errorMessage: "",
       info: {},
